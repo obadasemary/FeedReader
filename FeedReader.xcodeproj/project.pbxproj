@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		AF8E8FFA1CEC9A6F009D7002 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8E8FF91CEC9A6F009D7002 /* AppDelegate.swift */; };
-		AF8E8FFC1CEC9A6F009D7002 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8E8FFB1CEC9A6F009D7002 /* ViewController.swift */; };
 		AF8E8FFF1CEC9A6F009D7002 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF8E8FFD1CEC9A6F009D7002 /* Main.storyboard */; };
 		AF8E90011CEC9A6F009D7002 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF8E90001CEC9A6F009D7002 /* Assets.xcassets */; };
 		AF8E90041CEC9A6F009D7002 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF8E90021CEC9A6F009D7002 /* LaunchScreen.storyboard */; };
 		AF8E900F1CEC9A70009D7002 /* FeedReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8E900E1CEC9A70009D7002 /* FeedReaderTests.swift */; };
 		AF8E901A1CEC9A70009D7002 /* FeedReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8E90191CEC9A70009D7002 /* FeedReaderUITests.swift */; };
+		AF8E902A1CEC9D16009D7002 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8E90291CEC9D16009D7002 /* FeedTableViewController.swift */; };
+		AF8E90331CECB86A009D7002 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8E90321CECB86A009D7002 /* CoreData.framework */; };
+		D554DEA390DA392E18121079 /* Pods_FeedReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADE422CD665A5D91DC734C23 /* Pods_FeedReader.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		30BDA41748893A196C814E73 /* Pods-FeedReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FeedReader/Pods-FeedReader.debug.xcconfig"; sourceTree = "<group>"; };
+		ADE422CD665A5D91DC734C23 /* Pods_FeedReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeedReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF8E8FF61CEC9A6E009D7002 /* FeedReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF8E8FF91CEC9A6F009D7002 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AF8E8FFB1CEC9A6F009D7002 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AF8E8FFE1CEC9A6F009D7002 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF8E90001CEC9A6F009D7002 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF8E90031CEC9A6F009D7002 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,10 @@
 		AF8E90151CEC9A70009D7002 /* FeedReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeedReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF8E90191CEC9A70009D7002 /* FeedReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedReaderUITests.swift; sourceTree = "<group>"; };
 		AF8E901B1CEC9A70009D7002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF8E90281CEC9C11009D7002 /* FeedReaderBridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedReaderBridgingHeader.h; sourceTree = "<group>"; };
+		AF8E90291CEC9D16009D7002 /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		AF8E90321CECB86A009D7002 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BEC8DABCCD958B85EB96E4F1 /* Pods-FeedReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-FeedReader/Pods-FeedReader.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF8E90331CECB86A009D7002 /* CoreData.framework in Frameworks */,
+				D554DEA390DA392E18121079 /* Pods_FeedReader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24BCE79451C53A1674F99CCE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30BDA41748893A196C814E73 /* Pods-FeedReader.debug.xcconfig */,
+				BEC8DABCCD958B85EB96E4F1 /* Pods-FeedReader.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AF8E8FED1CEC9A6D009D7002 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +99,8 @@
 				AF8E900D1CEC9A70009D7002 /* FeedReaderTests */,
 				AF8E90181CEC9A70009D7002 /* FeedReaderUITests */,
 				AF8E8FF71CEC9A6E009D7002 /* Products */,
+				24BCE79451C53A1674F99CCE /* Pods */,
+				EF6CC422CA54F72BDA8B71E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +118,12 @@
 			isa = PBXGroup;
 			children = (
 				AF8E8FF91CEC9A6F009D7002 /* AppDelegate.swift */,
-				AF8E8FFB1CEC9A6F009D7002 /* ViewController.swift */,
+				AF8E90291CEC9D16009D7002 /* FeedTableViewController.swift */,
 				AF8E8FFD1CEC9A6F009D7002 /* Main.storyboard */,
 				AF8E90001CEC9A6F009D7002 /* Assets.xcassets */,
 				AF8E90021CEC9A6F009D7002 /* LaunchScreen.storyboard */,
 				AF8E90051CEC9A6F009D7002 /* Info.plist */,
+				AF8E90281CEC9C11009D7002 /* FeedReaderBridgingHeader.h */,
 			);
 			path = FeedReader;
 			sourceTree = "<group>";
@@ -125,6 +146,15 @@
 			path = FeedReaderUITests;
 			sourceTree = "<group>";
 		};
+		EF6CC422CA54F72BDA8B71E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF8E90321CECB86A009D7002 /* CoreData.framework */,
+				ADE422CD665A5D91DC734C23 /* Pods_FeedReader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +162,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF8E901E1CEC9A70009D7002 /* Build configuration list for PBXNativeTarget "FeedReader" */;
 			buildPhases = (
+				FD961F03CFA1822085406754 /* 📦 Check Pods Manifest.lock */,
 				AF8E8FF21CEC9A6E009D7002 /* Sources */,
 				AF8E8FF31CEC9A6E009D7002 /* Frameworks */,
 				AF8E8FF41CEC9A6E009D7002 /* Resources */,
+				E649CB1E289DFF52BC8EE868 /* 📦 Embed Pods Frameworks */,
+				459FEA7633E2932A5AC18284 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,13 +287,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		459FEA7633E2932A5AC18284 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FeedReader/Pods-FeedReader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E649CB1E289DFF52BC8EE868 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FeedReader/Pods-FeedReader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD961F03CFA1822085406754 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AF8E8FF21CEC9A6E009D7002 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF8E8FFC1CEC9A6F009D7002 /* ViewController.swift in Sources */,
 				AF8E8FFA1CEC9A6F009D7002 /* AppDelegate.swift in Sources */,
+				AF8E902A1CEC9D16009D7002 /* FeedTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +483,7 @@
 		};
 		AF8E901F1CEC9A70009D7002 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30BDA41748893A196C814E73 /* Pods-FeedReader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FeedReader/Info.plist;
@@ -413,6 +495,7 @@
 		};
 		AF8E90201CEC9A70009D7002 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEC8DABCCD958B85EB96E4F1 /* Pods-FeedReader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FeedReader/Info.plist;
@@ -487,6 +570,7 @@
 				AF8E90201CEC9A70009D7002 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF8E90211CEC9A70009D7002 /* Build configuration list for PBXNativeTarget "FeedReaderTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +579,7 @@
 				AF8E90231CEC9A70009D7002 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF8E90241CEC9A70009D7002 /* Build configuration list for PBXNativeTarget "FeedReaderUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +588,7 @@
 				AF8E90261CEC9A70009D7002 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
